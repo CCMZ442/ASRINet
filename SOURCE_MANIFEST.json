@@ -1,0 +1,48 @@
+{
+  "release_date": "2026-10-31",
+  "kind": "core_method_code",
+  "files": {
+    "asri_model.py": {
+      "retained_source": "work/ASRINET_C2_TERMINAL_20261004_0304/inputs/asri_model.py",
+      "sha256": "3567667E20D7B078EFE14EC0313F960DEAA53D038B8B5B78A110BA641AE0C659",
+      "byte_identical": true,
+      "formal_binding_checked": true
+    },
+    "multishot.py": {
+      "retained_source": "work/ASRINET_C2_TERMINAL_20261004_0304/inputs/multishot.py",
+      "sha256": "6FEBBDEA80774C7196F5481EAC6573A21DB764B278DEB8E8034B94A3A55A2CC1",
+      "byte_identical": true,
+      "formal_binding_checked": true
+    },
+    "controls.py": {
+      "retained_source": "work/ASRINET_C5_R1_20261004/controls.py",
+      "sha256": "06E9030F5F44DA9E525B65F887E66F2ED8701DA90E4C116963EC0175DE72FDB6",
+      "byte_identical": true,
+      "formal_binding_checked": false
+    },
+    "bilinear_control.py": {
+      "retained_source": "work/ASRINET_C5_R1_20261004/vendor/bilinear_control.py",
+      "sha256": "97FD82788025DBA4872716AFDA5B20690960A5586ADD6EE7EB12DAE389A70F2F",
+      "byte_identical": true,
+      "formal_binding_checked": false
+    },
+    "simple_head.py": {
+      "retained_source": "work/ASRINET_FOLLOWUP_20261007/simple_head.py",
+      "sha256": "E9AE2C56CE685234065326FF7B3A68983233B500AFF788ABCF8BC01C690EDDBA",
+      "byte_identical": true,
+      "formal_binding_checked": false
+    },
+    "metrics.py": {
+      "retained_source": "work/ASRINET_SCALAR_BOUNDARY_20261008/metrics.py",
+      "sha256": "0C50E92F414CE9422DA422D815167A5E6649D2A85EA7900E905819229723B842",
+      "byte_identical": true,
+      "formal_binding_checked": false
+    },
+    "test_metrics.py": {
+      "retained_source": "work/ASRINET_SCALAR_BOUNDARY_20261008/test_metrics.py",
+      "sha256": "76D6E3C850DD935F57F87BA52B110F746FFABF93E624A4B38003AF07E4035C0B",
+      "byte_identical": true,
+      "formal_binding_checked": false
+    }
+  }
+}

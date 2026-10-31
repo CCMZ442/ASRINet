@@ -1,0 +1,47 @@
+{
+  "model": "ASRINet",
+  "main_mode": "FREE",
+  "backbone": "ResNet-50",
+  "input_size": [200, 200],
+  "folds": [0, 1, 2],
+  "training_shot": 1,
+  "evaluation_shots": [1, 5],
+  "base": {
+    "epochs": 201,
+    "seed": 1998,
+    "optimizer": "SGD",
+    "learning_rate": 0.003,
+    "momentum": 0.9,
+    "weight_decay": 0.0001,
+    "poly_power": 0.9,
+    "batch_size": 2,
+    "note": "Paper results use final project carrier weights, not a best-validation checkpoint."
+  },
+  "head": {
+    "epochs": 5,
+    "main_seed": 3407,
+    "repetition_seeds": [3407, 3408, 3409],
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 2,
+    "loss": "cross_entropy",
+    "ignore_index": 255,
+    "base_frozen": true,
+    "zero_initialized_outputs": true,
+    "checkpoint_selection": "final"
+  },
+  "evaluation": {
+    "episode_seed": 1998,
+    "matched_support_query_pairs": true,
+    "equal_class_and_fold_averaging": true,
+    "boundary_band_diagonal_fraction": 0.02,
+    "FSSD12_episodes_per_fold": [200, 200, 200],
+    "SD4I_episodes_per_fold": [182, 219, 160],
+    "SD4I_fixed_model_support_seeds": [0, 1, 2, 3, 1998]
+  },
+  "datasets": {
+    "FSSD12": "https://github.com/VDT-2048/CPANet",
+    "SD4I": "https://github.com/bbbbby-99/TGRNet-Surface-Defect-Segmentation"
+  }
+}
